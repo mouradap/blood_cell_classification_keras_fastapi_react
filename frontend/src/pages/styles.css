@@ -1,0 +1,57 @@
+
+.main {
+    width: 70%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 20;
+    display:flex;
+    align-items: center;
+    font-size: 500;
+    font-weight: bold;
+}
+
+.upload {
+    width: 70%;
+    max-width: 1120px;
+    height: 75vh;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.results {
+    display: flex;
+    margin-top: 30;
+    align-items: center
+}
+
+.button {
+    cursor: pointer;
+    width: 20%;
+    height: 60px;
+    background-color: #409480;
+    border: 0px;
+    border-radius: 8px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    transition: filter 0.2s;
+    margin-left: 15px;
+
+}
+
+
+.button:hover {
+    filter: brightness(70%);
+}
