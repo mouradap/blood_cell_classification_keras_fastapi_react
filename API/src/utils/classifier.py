@@ -5,6 +5,7 @@
 import numpy as np
 import json
 
+
 def evaluate(model, image):
     # Predição pelo modelo CNN da imagem preprocessada
 
@@ -23,18 +24,13 @@ def evaluate(model, image):
     else:
         return "Classification is ambiguous."
 
-
     # Retornando o score em valor percentual
 
     score = round((prediction.item(np.argmax(prediction)) * 100), 2)
 
-
     # Criando um objeto JSON para resposta.
 
-    result = {
-        'classification': classification,
-        'score': score
-    }
+    result = {"classification": classification, "score": score}
 
     result = json.dumps(result)
 

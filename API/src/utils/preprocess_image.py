@@ -8,9 +8,11 @@ from keras.preprocessing import image
 import numpy as np
 from PIL import Image
 
+
 def load_image(file):
     image = Image.open(file)
     return image
+
 
 def preprocess_img(image):
     img = image.resize((80, 80))
