@@ -109,7 +109,7 @@ export default function Index() {
                     <br/>
                         {`Our model has classified as more likely to be
                         ${JSON.parse(classification.result.classification).classification}
-                        with ${JSON.parse(classification.result.classification).score} % percent confidence.`}
+                        with ${JSON.parse(classification.result.classification).score} % confidence.`}
                     </h2>
                 </div>
                 ) : (

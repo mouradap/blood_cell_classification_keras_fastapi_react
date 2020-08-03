@@ -27,3 +27,9 @@ To get the API running, Change to '/API' directory and run:<br>
 
 To start the web app, change to '/frontend' directory and run:<br>
 `npm start`
+
+Creating the model in Google Colab:
+--
+To recreate or modify the CNN model, upload the blood_cell_type_cnn.ipynb to Google Colab.<br>
+Add username and API key to<br>
+`api_token = {"username":"","key":""}`
