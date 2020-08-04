@@ -4,6 +4,8 @@ Convolutional Neural Network model to classify microscope images of blood cells,
 A backend API was created using FastAPI<br>
 And a client-side web app was created in ReactJS.
 
+![Screenshot](https://i.imgur.com/zUkCZl2.png)
+
 Docker distribution
 --
 To run the server and web app through Docker: <br>
