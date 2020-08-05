@@ -6,9 +6,21 @@ And a client-side web app was created in ReactJS.
 
 ![Screenshot](https://i.imgur.com/zUkCZl2.png)
 
-Docker distribution
+Usage:
 --
-To run the server and web app through Docker: <br>
+The server is configured at localhost:8000 and the web app at localhost:3000. <br>
+Once both services are up and running, head over to localhost:3000, upload an image and the API will respond with the classification. <br>
+Current classes:
+Eosinophil, Monocyte, Lymphocyte, and Neutrophil.
+
+Running the entire app with Docker-compose:
+--
+To start the entire application with docker-compose, run:<br>
+`docker-compose up`
+
+Docker images
+--
+To run the server and web app separately with Docker images: <br>
 To start the server, run <br>
 `docker build API --tag <servername>`<br>
 `docker run -it --rm -p 8000:80 <servername>`<br>
@@ -35,7 +47,7 @@ tensorflow
 <br>React
 <br>axios
 
-Local installation:
+Local installation without Docker images:
 --
 To install the API and web app locally:<br>
 change to /API directory and run <br>
@@ -43,18 +55,11 @@ change to /API directory and run <br>
 Then change to /frontend and run <br>
 `npm install`
 
-Local usage:
---
 To get the API running, Change to '/API' directory and run:<br>
 `uvicorn main:app --reload`
 
 To start the web app, change to '/frontend' directory and run:<br>
 `npm start`<br>
-
-The server is configured at localhost:8000 and the web app at localhost:3000. <br>
-Once both services are up and running, head over to localhost:3000, upload an image and the API will respond with the classification. <br>
-Current classes:
-Eosinophil, Monocyte, Lymphocyte, and Neutrophil.
 
 Creating the model in Google Colab:
 --

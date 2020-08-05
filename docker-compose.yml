@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  api:
+    build: "./API"
+    # command: uvicorn main:app --reload --host 0.0.0.0 --port 8000
+    volumes:
+        - .:/API
+    ports:
+      - "8000:80"
+    restart: always
+  
+  web:
+    build: "./frontend"
+    # command: npm start --host 0.0.0.0 --port 3000
+    volumes:
+      - .:/frontend
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    restart: always
